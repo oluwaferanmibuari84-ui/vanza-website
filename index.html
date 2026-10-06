@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANTA Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <a href="#" class="logo">VANTA</a>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for products, brands and more..."
+                >
+                <button id="searchButton">
+                    🔍
+                </button>
+            </div>
+
+            <div class="header-actions">
+                <button class="account" id="accountButton">
+                    👤 <span>Account</span>
+                </button>
+                <button class="wishlist" id="wishlistButton">♡</button>
+                <button class="cart" id="cartButton">
+                    🛒 <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="categories">
+            <a href="#" data-category="all">All Categories</a>
+            <a href="#" data-category="Phones">Phones &amp; Tablets</a>
+            <a href="#" data-category="Fashion">Fashion</a>
+            <a href="#" data-category="Electronics">Electronics</a>
+            <a href="#" data-category="Beauty">Beauty</a>
+            <a href="#" data-category="Home">Home &amp; Kitchen</a>
+            <a href="#" data-category="Computing">Computing</a>
+            <a href="#" data-category="Shoes">Shoes</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div>
+                <p>VANTA MARKET</p>
+                <h1>EVERYTHING<br>YOU WANT.</h1>
+                <button class="hero-btn">Shop Now →</button>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="section-heading">
+                <div>
+                    <p>SHOP OUR COLLECTION</p>
+                    <h2>Trending Now</h2>
+                </div>
+
+                <div class="filter-controls">
+                    <div class="price-filter">
+                        <label for="priceFilter">Price:</label>
+                        <select id="priceFilter">
+                            <option value="all">All Prices</option>
+                            <option value="100000">Under ₦100,000</option>
+                            <option value="500000">Under ₦500,000</option>
+                            <option value="1000000">Under ₦1,000,000</option>
+                        </select>
+                    </div>
+
+                    <div class="sort-box">
+                        <label for="sortProducts">Sort:</label>
+                        <select id="sortProducts">
+                            <option value="default">Default</option>
+                            <option value="low">Price: Low → High</option>
+                            <option value="high">Price: High → Low</option>
+                            <option value="rating">Highest Rated</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-status" id="searchStatus"></div>
+            <div class="product-grid" id="productGrid"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
